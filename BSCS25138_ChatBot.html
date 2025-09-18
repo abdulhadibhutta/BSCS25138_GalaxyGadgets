@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>GalaxyGadgets-ChatBot</title>
+    <link rel="stylesheet" href="BSCS25138_style.css"/>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="BSCS25138_Home.html">HOME</a></li>
+            <li><a href="BSCS25138_Products.html">PRODUCTS</a></li>
+            <li><a href="BSCS25138_Contact.html">ABOUT US</a></li>
+            <li><a href="BSCS25138_ChatBot.html">ChatBot</a></li>
+        </ul>
+    </nav>
+    <main class="chatbot-page">
+        <h1>Galaxy Gadget ChatBot</h1>
+        <div id="chatbot-box">
+            <div id="chatbot-log"></div>
+        </div>
+        <div class="chat-input-area">
+            <input
+                type="text"
+                id="user-input"
+                placeholder="Type your message...."
+                onekeydown="if(event.key === 'Enter'){sendMessage();}"
+            />
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </main>
+    <script src="BSCS25138_script.js" defer></script>
+</body>
+</html>
